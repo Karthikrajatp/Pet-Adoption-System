@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='homestyle.css')}}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>{% block title %}Home{% endblock %}</title>
+</head>
+<body style="margin-top: 0;padding-top: 0;">
+    <section class="header">
+        <nav>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="/logout">Logout</a></li>
+                </ul>   
+            </div> 
+        </nav>
+        <p>Pets are our best friends!
+         </p>
+    </section>
+<section class="imgandtext">
+            <p class="question">
+                Why own pets?
+            </p>
+            <p class="Answer">
+                Pets like dogs and cats offer their owners with companionship,
+                understanding and an unbreakable bond of devotion that they can’t find elsewhere.
+                The daily routine of caring for your pet is very satisfying for
+                pet owners who feel like they may be lacking purpose. Pets need our help too and they will 
+                make our lives fulfilling and beautiful.
+            </p>
+            <div class="img" style="border-radius: 200px;">
+                <img src="{{ url_for('static',filename='images/womenanddog.webp')}}" width="600" height="400">
+            </div>
+        </section>
+        <p class="whattodo">
+            What would you like to do?
+        </p>
+        <div class="buttonhold">
+            <a href="/rehome" class="Sell">Rehome a pet</a>
+            <a href="/adopt/" class="Adopt">Adopt a pet</a>
+        </div>
+        <section class="imgandtext">
+            <p class="question">
+                Our Mission
+            </p>
+            <p class="Answer">
+                We want to find loving and caring homes for the beautiful and sweet animals 
+                who will be your life companion. Together, we would like to ease the burden on the animal
+                shelters and nurture these pets. Give these wonderful animals a chance, and you will see the
+                true beauty of life.
+            </p>
+            <div class="img1" style="border-radius: 200px;">
+                <img src="{{ url_for('static',filename='images/cat.jpg')}}" width="600" height="400">
+            </div>
+        </section>
+        <footer class="footer">
+            <p>Find us on:</p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+        </footer>
+</body>
+</html>

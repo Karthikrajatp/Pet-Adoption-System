@@ -1,0 +1,49 @@
+body{
+        background-color:thistle;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+.form-control { width:295px !important;
+background-image: url(images/searchbar.jpg);
+color: black;
+background-blend-mode: difference;
+}
+#srch-term1 { margin-right:10px;
+ }
+ #srch-term2 { margin-right:10px;
+ }
+ #srch-term3{ margin-right:0px;
+    border-style: double;
+ }
+.btn { margin-left:10px; }
+.box{
+    display: flex;
+    background-color:black;
+    padding: 60px 130px;
+    margin-top: 70px;
+}
+.navbar-form{
+    width: fit-content;
+    height:max-content;
+    display: flex;
+    flex-direction: row;
+}
+.input-group-add-on
+{
+    display: flex;
+}
+nav {
+    background-color: rgb(42, 2, 40);
+    overflow: hidden;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+/* .exit{
+    
+} */

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet"  href="{{url_for('static',filename='rehomestyle.css')}}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+<body>
+    <button onclick="location.href='/home'" class="btn"><i class="fa fa-home"></i></button>
+    <div class ="container">
+        <div class="title">Rehome</div>
+        <div class="content">
+            <form method="post">
+                <div class="user-details">
+                  <div class="input-box">
+                      <span class ="details">Dog name</span>
+                      <input type="text" name="dogname" placeholder="Enter your dog name" required>
+                  </div>
+                  <div class ="input-box">
+                      <span class="details">Dog breed</span>
+                      <input type="text" name="dogbreed" placeholder="Enter your dog breed" required>
+
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Dog Age</span>
+                    <input type="text" name="dogage" placeholder="Enter your dog age" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Pincode</span>
+                    <input type="text" name="pincode" placeholder="Enter your pincode" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">City</span>
+                    <input type="text" name="city" placeholder="Enter your city" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Description of dog</span>
+                    <textarea rows="3" name="description" class="descript" type="text" placeholder="Give a brief description" required></textarea>
+                </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
