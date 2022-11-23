@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" href="{{url_for('static',filename='adoptstyle.css')}}">
     <nav>
-        <a href="/home">home</a>
-        <a href="/logout" id="exit">logout</a>
+        <a href="/home">Home</a>
+        <a href="/logout" id="exit">Logout</a>
     </nav>
+    <p class="akp">SEARCH FOR PETS AROUND YOU</p>
     <div class="box">
      <form class="navbar-form" type="search">
   <div class="input-group-add-on">
@@ -25,23 +26,26 @@
   </div>
 </div>
 </form>
+<div class="whole">
 {%if dogs%}
             {%for dog in dogs%}
             {%for user in users%}
             {%if dog.dogownerid == user.id%}
-            <p>
+            <div class="abc">
+            <p class="tp">
                 {{"Dog Name : "}} {{dog.dogname}} <br>
                 {{"Dog Breed : "}} {{dog.dogbreed}} <br>
                 {{"Owner name : "}} {{user.fullname}} <br>
                 {{"Owner email : "}} {{user.email}} <br>
+                {{"Owner PhoneNumber : "}} {{user.phonenumber}} <br>
                 {{"Date posted : "}} {{dog.date}} <br>
-                {{"Dog Description:"}} {{dog.dogdescription}} <br>
+                {{"Dog Description:"}} {{dog.dogdescription}}<br>
                 {%endif%}
             </p>
-                
-                <br>
+          </div>
             {% endfor %}
             {% endfor %}
     {%endif%}
+  </div>
 </body>
 </html>

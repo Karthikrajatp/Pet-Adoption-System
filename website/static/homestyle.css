@@ -37,6 +37,28 @@
     height: 100vh;
 
 }
+.title{
+    transition: 0.5s;
+}
+.title:hover{
+    transform: scale(1.5);
+}
+.logout{
+    transition: 0.3s;
+    background: #948994;
+    border-radius: 100px;
+    color: #fff;
+    font-family: Inter,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: .05em;
+    cursor: pointer;
+    text-align:center;
+    padding: 10px;
+}
+.logout:hover{
+    transform: scale(1.2);
+}
 .container p {
     color: black;
     text-align:center;
@@ -54,7 +76,7 @@
 .imgandtext{
     width:550px;
     word-wrap: break-word;
-    margin-left: 180px;
+    margin-left: 100px;
 }
 .question{
     margin-top: 100px;
@@ -63,6 +85,11 @@
     line-height: 1.17em;
     color: rgb(5, 129, 127);
     font-weight: bold;
+    transition: 0.6s;
+}
+.question:hover{
+    color: rgb(6, 1, 31);
+    transform: scale(1.5);
 }
 .Answer{
     margin-top: 40px;
@@ -81,6 +108,7 @@
     margin-left: 700px;
     margin-top: -380px;
     border-radius: 200px;
+    margin-right: 400px;
 }
 .whattodo{
     margin-left: 370px;
@@ -92,7 +120,13 @@
     color: rgb(5, 129, 127);
     font-weight: bold;
     margin-bottom: 30px;
+    transition: 0.6s;
 }
+.whattodo:hover{
+    color: rgb(6, 1, 31);
+    transform: scale(1.3);
+}
+
 .Adopt{
     margin-top: 280px;   
     margin-bottom: 40px;
@@ -101,7 +135,7 @@
     border-radius: 75px;
     color: #fff;
     font-family: Inter,Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 700;
     letter-spacing: .05em;
     cursor: pointer;
@@ -110,6 +144,9 @@
     border-color: none;
     width: 210px;
     height: 60px;
+    padding: 10px 15px;
+    transition: 0.2s;
+
 
     
 }
@@ -121,34 +158,38 @@
     border-radius: 100px;
     color: #fff;
     font-family: Inter,Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 700;
     letter-spacing: .05em;
     cursor: pointer;
     text-align:center;
     text-decoration:none;
     border-color: none;
-    width: 210px;
-    height: 60px;
+    padding: 10px 15px;
+    outline: none;
+    transition: 0.2s;
 
 
 }
+
 .buttonhold{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    justify-items:center ;
     float: center;
-    align-items: center;
+    /* align-items:stretch; */
 }
 .Sell:hover{   
     opacity: 0.7;
+    transform: scale(0.9);
     }
 .Sell:active{  
     opacity: 0.9;
     }
 .Adopt:hover{   
         opacity: 0.7;
+        transform: scale(0.9);
         }
 .Adopt:active{  
         opacity: 0.9;
@@ -179,38 +220,13 @@ footer p{
     margin-bottom: 20px;
     margin-top: 20px;
 }
-.fa { 
-    padding: 12px;
-    font-size: 10px;
-    width: 25px;
-    text-align: center;
+.fa{
+    color: rgb(208, 208, 208);
+    transition: 0.1s;
     text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-    margin-left: 14px;
-  }
-  .fa:hover {
-    opacity: 0.7;
+    
 }
-.fa-facebook {
-    background: #3B5998;
-    color: white;
+.fa:hover {
+    color: rgb(6, 1, 31);
   }
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-  .fa-youtube {
-    background: #bb0000;
-    color: white;
-  }
-  .fa-instagram {
-    background: rgb(228, 59, 192);
-    color: white;
-  }
-  
-  .fa-pinterest {
-    background: #cb2027;
-    color: white;
-  }
-  
+

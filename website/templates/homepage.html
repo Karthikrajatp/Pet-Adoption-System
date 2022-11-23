@@ -6,16 +6,28 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>{% block title %}Home{% endblock %}</title>
 </head>
+<script>
+   function btnclick() {
+        window.location.href = "/rehome"
+    }
+    function btnclick1() {
+        window.location.href = "/adopt/"
+    }
+    function btnclick2() {
+        window.location.href = "/logout"
+    }
+
+</script>
 <body style="margin-top: 0;padding-top: 0;">
     <section class="header">
         <nav>
             <div class="navbar-links">
                 <ul>
-                    <li><a href="/logout">Logout</a></li>
+                    <li> <button class="logout" onclick="btnclick2()"> LogOut</a> </button></li>
                 </ul>   
             </div> 
         </nav>
-        <p>Pets are our best friends!
+        <p class="title">Pets are our best friends!
          </p>
     </section>
 <section class="imgandtext">
@@ -33,12 +45,13 @@
                 <img src="{{ url_for('static',filename='images/womenanddog.webp')}}" width="600" height="400">
             </div>
         </section>
-        <p class="whattodo">
-            What would you like to do?
-        </p>
+        <p class="whattodo">What would you like to do?</p>
+        
         <div class="buttonhold">
-            <a href="/rehome" class="Sell">Rehome a pet</a>
-            <a href="/adopt/" class="Adopt">Adopt a pet</a>
+            
+            <button class="Sell" onclick="btnclick()"> Rehome a pet</a> </button>
+            <button class="Adopt" onclick="btnclick1()"> Adopt a pet</a> </button>
+            
         </div>
         <section class="imgandtext">
             <p class="question">
@@ -55,12 +68,8 @@
             </div>
         </section>
         <footer class="footer">
-            <p>Find us on:</p>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-youtube"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-pinterest"></a>
+            <p>For any Queries:</p>
+            <a class="fa" href="mailto:karthikraja@gmail.com" target="_top"><i class="fa fa-user" aria-hidden="true"></i> Contact Admin</a>
         </footer>
 </body>
 </html>

@@ -18,7 +18,7 @@ background-blend-mode: difference;
 .btn { margin-left:10px; }
 .box{
     display: flex;
-    background-color:black;
+    /* background-color:black; */
     padding: 60px 130px;
     margin-top: 70px;
 }
@@ -31,12 +31,37 @@ background-blend-mode: difference;
 .input-group-add-on
 {
     display: flex;
+    margin-left: 120px;
 }
 nav {
     background-color: rgb(42, 2, 40);
     overflow: hidden;
 }
+.abc{
+    font-size:x-large;
+    color: rgb(121, 64, 36);
+    border: 10px;
+    border-color:black;
+    border-width: 40px;
+    width: 500px;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 0;
+    }
+.akp{
+    margin-top: 80px;
+    text-align: center;
+    font-size:x-large;
+    padding: 25px 30px;
+    background-color: black;
+    color: aqua;
+    
+}
+.whole{
 
+    display: inline-block;
+    
+}
 nav a {
     text-decoration: none;
     padding: 20px;
@@ -44,6 +69,3 @@ nav a {
     float: left;
     color: white;
 }
-/* .exit{
-    
-} */
