@@ -54,7 +54,7 @@ def sign_up():
             flash("Your e-mail is too short!!",category='error')
         elif (len(username) or len(fullname))<5:
             flash("Your Name is too short!!,try to increase the characters",category='error')
-        elif len(phonenumber)<=10:
+        elif len(phonenumber)<10:
             flash("Please Enter a valid mobile number",category='error')
         elif len(password1)<7:
             flash("Your Password is too weak!!",category='error')
