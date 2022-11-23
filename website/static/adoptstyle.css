@@ -60,6 +60,7 @@ nav {
 .whole{
 
     display: inline-block;
+    padding-left: 30px;
     
 }
 nav a {
