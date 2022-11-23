@@ -11,7 +11,7 @@ body{
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  background: linear-gradient(135deg, #6f9f6b, #d3b161);
 }
 .container{
   max-width: 700px;
@@ -34,7 +34,7 @@ body{
   height: 3px;
   width: 30px;
   border-radius: 5px;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  background: linear-gradient(135deg, #3e91c8, #b621f2ba);
 }
 .content form .user-details{
   display: flex;
