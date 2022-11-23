@@ -42,6 +42,12 @@ def adoptq():
     elif(pincode and breed and not(city)):
         dogs=Dog.query.filter(Dog.dogpincode.like('%'+pincode+'%'),Dog.dogbreed.like('%'+breed+'%')).all()
         return render_template("adopt.html",dogs=dogs,users=users)
+    elif(not(pincode) and not(breed) and city):
+        dogs=Dog.query.filter(Dog.dogcity.like('%'+city+'%')).all()
+        return render_template("adopt.html",dogs=dogs,users=users)
+    elif(not(pincode) and breed and city):
+        dogs=Dog.query.filter(Dog.dogcity.like('%'+city+'%'),Dog.dogbreed.like('%'+breed+'%')).all()
+        return render_template("adopt.html",dogs=dogs,users=users)
     elif(pincode and city and not(breed)):
         dogs=Dog.query.filter(Dog.dogpincode.like('%'+pincode+'%'),Dog.dogcity.like('%'+city+'%')).all()
         return render_template("adopt.html",dogs=dogs,users=users)
