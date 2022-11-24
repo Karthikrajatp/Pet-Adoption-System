@@ -27,25 +27,30 @@
 </div>
 </form>
 <div class="whole">
-{%if dogs%}
-            {%for dog in dogs%}
-            {%for user in users%}
-            {%if dog.dogownerid == user.id%}
+ {%if dogs%}
+       {%for dog in dogs%}
+       {%for user in users%}
+       {%if dog.dogownerid == user.id%}
+       <div class="wrapper">
             <div class="abc">
-            <p class="tp">
-                {{"Dog Name : "}} {{dog.dogname}} <br>
-                {{"Dog Breed : "}} {{dog.dogbreed}} <br>
-                {{"Owner name : "}} {{user.fullname}} <br>
-                {{"Owner email : "}} {{user.email}} <br>
-                {{"Owner PhoneNumber : "}} {{user.phonenumber}} <br>
-                {{"Date posted : "}} {{dog.date}} <br>
-                {{"Dog Description:"}} {{dog.dogdescription}}<br>
-                {%endif%}
-            </p>
-          </div>
+                <p class="tp">
+                    {{"Dog Name : "}} {{dog.dogname}} <br>
+                    {{"Dog Breed : "}} {{dog.dogbreed}} <br>
+                    {{"Owner name : "}} {{user.fullname}} <br>
+                    {{"Owner email : "}} {{user.email}} <br>
+                    {{"Owner PhoneNumber : "}} {{user.phonenumber}} <br>
+                    {{"Date posted : "}} {{dog.date}} <br>
+                    {{"Dog Description:"}} {{dog.dogdescription}}<br>
+                    {%endif%}
+                </p>
+                <div class="req-div">
+                    <button class="btn btn-primary">Request</button>
+                </div>    
+             </div>
+        </div>
+        {% endfor %}
             {% endfor %}
-            {% endfor %}
-    {%endif%}
+  {%endif%}
   </div>
 </body>
 </html>
