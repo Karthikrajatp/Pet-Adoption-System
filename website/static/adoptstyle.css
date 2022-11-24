@@ -37,7 +37,7 @@ nav {
     background-color: rgb(42, 2, 40);
     overflow: hidden;
 }
-.abc{
+/*.abc{
     font-size:x-large;
     color: rgb(121, 64, 36);
     border: 10px;
@@ -48,6 +48,15 @@ nav {
   border: 5px solid black;
   margin: 0;
     }
+*/
+
+.abc{
+    display: flex;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
 .akp{
     margin-top: 80px;
     text-align: center;
@@ -59,9 +68,14 @@ nav {
 }
 .whole{
 
-    display: inline-block;
+/*     display: inline-block; */
+    display:flex;
+    flex-wrap:wrap;
     padding-left: 30px;
     
+}
+.wrapper{
+     padding:10px;
 }
 nav a {
     text-decoration: none;
