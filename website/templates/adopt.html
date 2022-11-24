@@ -41,15 +41,15 @@
                     {{"Owner PhoneNumber : "}} {{user.phonenumber}} <br>
                     {{"Date posted : "}} {{dog.date}} <br>
                     {{"Dog Description:"}} {{dog.dogdescription}}<br>
-                    {%endif%}
-                </p>
-                <div class="req-div">
+                    <div class="req-div">
                     <button class="btn btn-primary">Request</button>
-                </div>    
+                  </div>  
+                    {%endif%}
+                </p>   
              </div>
         </div>
         {% endfor %}
-            {% endfor %}
+        {% endfor %}
   {%endif%}
   </div>
 </body>

@@ -67,7 +67,6 @@ nav {
     
 }
 .whole{
-
 /*     display: inline-block; */
     display:flex;
     flex-wrap:wrap;
@@ -76,6 +75,12 @@ nav {
 }
 .wrapper{
      padding:10px;
+}
+.req-div{
+    padding:5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 nav a {
     text-decoration: none;
