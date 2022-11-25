@@ -1,56 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="{{url_for('static',filename='adoptstyle.css')}}">
+  </head>
+  <body>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='adoptstyle.css')}}"
+    />
     <nav>
-        <a href="/home">Home</a>
-        <a href="/logout" id="exit">Logout</a>
+      <a href="/home">Home</a>
+      <a href="/logout" id="exit">Logout</a>
     </nav>
     <p class="akp">SEARCH FOR PETS AROUND YOU</p>
     <div class="box">
-     <form class="navbar-form" type="search">
-  <div class="input-group-add-on">
-    <input class="form-control" placeholder="Pincode" name="pincodesearch" id="input1" type="number">
-    <input class="form-control" placeholder="Breed" name="breedsearch" id="input2" type="text">
-    <input class="form-control" placeholder="city" name="citysearch" id="input3" type="text">
-    <div class="input-group-btn">
-      <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-    </div>
-  </div>
-</div>
-</form>
-<div class="whole">
- {%if dogs%}
-       {%for dog in dogs%}
-       {%for user in users%}
-       {%if dog.dogownerid == user.id%}
-       <div class="wrapper">
-            <div class="abc">
-                <p class="tp">
-                    {{"Dog Name : "}} {{dog.dogname}} <br>
-                    {{"Dog Breed : "}} {{dog.dogbreed}} <br>
-                    {{"Owner name : "}} {{user.fullname}} <br>
-                    {{"Owner email : "}} {{user.email}} <br>
-                    {{"Owner PhoneNumber : "}} {{user.phonenumber}} <br>
-                    {{"Date posted : "}} {{dog.date}} <br>
-                    {{"Dog Description:"}} {{dog.dogdescription}}<br>
-                    <div class="req-div">
-                    <button class="btn btn-primary">Request</button>
-                  </div>  
-                    {%endif%}
-                </p>   
-             </div>
+      <form class="navbar-form" type="search">
+        <div class="input-group-add-on">
+          <input
+            class="form-control"
+            placeholder="Pincode"
+            name="pincodesearch"
+            id="input1"
+            type="number"
+          />
+          <input
+            class="form-control"
+            placeholder="Breed"
+            name="breedsearch"
+            id="input2"
+            type="text"
+          />
+          <input
+            class="form-control"
+            placeholder="city"
+            name="citysearch"
+            id="input3"
+            type="text"
+          />
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+          </div>
         </div>
-        {% endfor %}
-        {% endfor %}
-  {%endif%}
-  </div>
-</body>
+      </form>
+    </div>
+
+    <div class="whole">
+      {%if dogs%} {%for dog in dogs%} {%for user in users%} {################}
+      {%if dog.dogownerid == user.id%}
+      <div class="wrapper">
+        <div class="databox">
+          <p class="datatext">
+            {{"Dog Name : "}} {{dog.dogname}} <br />
+            {{"Dog Breed : "}} {{dog.dogbreed}} <br />
+            {{"Owner name : "}} {{user.fullname}} <br />
+            {{"Owner PhoneNumber : "}} {{user.phonenumber}} <br />
+            {{"Dog Description:"}} {{dog.dogdescription}}<br />
+          </p>
+          <div class="req-div">
+            <a href="mailto:{{user.email}}" class="btn btn-info">Request</a>
+          </div>
+        </div>
+      </div>
+      {%endif%} {% endfor %} {% endfor %} {%endif%}
+    </div>
+  </body>
 </html>

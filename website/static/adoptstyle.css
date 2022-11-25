@@ -1,5 +1,8 @@
+*{
+    font-family: sans-serif;
+}
 body{
-        background-color:thistle;
+        background-color:rgb(255, 255, 255);
         background-repeat: no-repeat;
         background-size:cover;
     }
@@ -18,7 +21,6 @@ background-blend-mode: difference;
 .btn { margin-left:10px; }
 .box{
     display: flex;
-    /* background-color:black; */
     padding: 60px 130px;
     margin-top: 70px;
 }
@@ -34,52 +36,38 @@ background-blend-mode: difference;
     margin-left: 120px;
 }
 nav {
-    background-color: rgb(42, 2, 40);
+    background-color: rgb(172, 172, 172);
     overflow: hidden;
 }
-/*.abc{
-    font-size:x-large;
-    color: rgb(121, 64, 36);
-    border: 10px;
-    border-color:black;
-    border-width: 40px;
-    width: 500px;
-  padding: 10px;
-  border: 5px solid black;
-  margin: 0;
-    }
-*/
-
-.abc{
+.databox{
     display: flex;
     padding: 10px;
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 5px;
+    justify-content: space-between;
+    
 }
-
 .akp{
     margin-top: 80px;
     text-align: center;
     font-size:x-large;
+    font-family: sans-serif;
     padding: 25px 30px;
-    background-color: black;
-    color: aqua;
-    
+    color: rgb(0, 0, 0);   
 }
 .whole{
-/*     display: inline-block; */
     display:flex;
-    flex-wrap:wrap;
-    padding-left: 30px;
-    
+    flex-wrap:wrap;  
 }
 .wrapper{
      padding:10px;
+     flex: 50%;
 }
 .req-div{
     padding:5px;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     justify-content: flex-end;
 }
 nav a {
@@ -89,3 +77,4 @@ nav a {
     float: left;
     color: white;
 }
+
