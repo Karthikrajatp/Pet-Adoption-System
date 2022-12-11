@@ -56,4 +56,7 @@ def adoptq():
         return render_template("adopt.html",dogs=dogs,users=users)
     else:
         return render_template("adopt.html")
-
+@views.route('/report/')
+@login_required
+def report():
+    return render_template("report.html",user = current_user)
