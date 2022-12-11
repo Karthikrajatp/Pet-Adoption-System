@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+body{    
+  background-image:url(images/vivid-blurred-colorful-wallpaper-background.jpg);
+    text-align: center;
+}
+.btn { 
+  background-color: white;
+  border: none;
+  color: black; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  margin-top: -500px;
+}
+.fcf-body {
+  font-family: -apple-system, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding:50px 40px;
+  text-align: left;
+  width:50%;
+  margin-left: 22%;
+  display:block;
+
+}
+.fcf-form-group {
+  background-color: #5DADE2;
+  color: white;
+  padding: 12px 25px;
+  margin-left: -20px;
+  border: none;
+  border-radius: 4px;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+#Name{
+  height:min-content;
+  width:fit-content;
+  max-height: 0.5px;
+  border: black;
+  border-color: black;
+}
+h3{
+  color:white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar{
+  color: white;
+  display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: flex-end;
+}

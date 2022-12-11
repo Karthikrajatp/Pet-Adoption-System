@@ -64,9 +64,13 @@
             {{"Owner name : "}} {{user.fullname}} <br />
             {{"Owner PhoneNumber : "}} {{user.phonenumber}} <br />
             {{"Dog Description:"}} {{dog.dogdescription}}<br />
+            {{"reported:"}} {{dog.reported}}<br/>
           </p>
           <div class="req-div">
             <a href="mailto:{{user.email}}" class="btn btn-info">Request</a>
+          </div>
+          <div class="report-div">
+            <a href="/report/" class="btn btn-info">report</a>
           </div>
         </div>
       </div>

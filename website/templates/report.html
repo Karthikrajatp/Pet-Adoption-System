@@ -1,34 +1,54 @@
+<?php include 'contact-form-process.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static',filename='reportstyle.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
-    <style>
-        body {
-          background-color: linen;
-        }
-        
-        h1 {
-          color: maroon;
-          margin-left: 40px;
-        }
-
-        
-        </style>
 </head>
 <body>
-
-    <form action="mailto:karthikraja@gmail.com" method="post" enctype="text/plain" >
-        Reason for report:<input type="text" name="Enter reason for reporting"><br>
-        <input type="radio" name="problem" id="fake" value="Fake pet details">
-        <label for="html">Fake pet details</label><br>
-            <input type="radio" name="problem" id="abusive" value="Abusive customer">
-        <label for="css">Abusive customer</label><br>
-            <input type="radio" name="problem" id="sus" value="The user seems suspicious">
-        <label for="javascript">The user seems suspicious</label><br>
-            <input type="submit" name="submit" value="Submit">
+    <nav>
+    <button onclick="location.href='/home'" class="btn"><i class="fa fa-home"></i></button>
+    </nav>
+    <div class="parent">
+    <div class="child">
+        <div class="fcf-body">
+        <form id="fcf-form-id" class="fcf-form-class" method="post" action="mailto:karthikraja@gmail.com" enctype="text/plain">
+            <div class="fcf-form-group">
+                <div class="heading"> <h3>Oops!!we are sorry for your Inconvenience :/</h3></div>
+                <label for="Name" class="fcf-label">Your name</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                </div>
+                <label for="Email" class="fcf-label">Your email address</label>
+                <div class="fcf-input-group">
+                    <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                </div>
+                <div class="fcf-form-group">
+                    <label for="contact reason">Contact Reason</label>
+                        <select id="contact-reason" name="contact reason">
+                        <option value="Abusive customer">Abusive customer</option>
+                        <option value="Missing content">Missing content</option>
+                        <option value="Fake pet entry">Fake pet entry</option>
+                        <option value="Others">Other</option>
+                        </select>
+                </div>
+                <div class="fcf-form-group">
+                    <label for="Message" class="fcf-label">Your message</label>
+                        <div class="fcf-input-group">
+                            <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                        </div>
+                </div>
+                <div class="fcf-form-group">
+                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+                </div>
+            </div>
         </form>
+        </div>
+    </div>    
+</div>
 </body>
 </html>
